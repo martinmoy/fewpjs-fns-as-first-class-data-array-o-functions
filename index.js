@@ -30,8 +30,8 @@ let unleashDog = function(dogName, dogBreed) {
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 function exerciseDog(dog, breed){
-  return routine.map(function(eachfx){
-      return eachfx(dog, breed)
+  return routine.map(function(fx){
+      return fx(dog, breed)
   })
 }
 
